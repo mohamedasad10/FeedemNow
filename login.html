@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="feedemnow.css">
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 450px;
+    margin:auto;
+    max-width: 90%;
+    transition: transform 1s;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    border: 2px solid rgba(37, 35, 35, 0.826);
+    border-radius: 15px;
+    padding-bottom: 20px;
+    box-shadow: 1px 10px 10px #00000045;
+    background-color: #f0f0f0;
+}
+
+.form-container {
+    font-weight:bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    background: url("images/landing-bg.png") no-repeat center center/cover;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    border-width: 1.5px;
+}
+
+button {
+    font-weight: bold;
+    padding: 10px;
+    background-color: #AC311A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ac301abb;
+}
+</style>
+
+<body>
+    <div class="form-container">
+        <div class="container">
+            <img src="images/feedemnow-logo.png" alt="FeedemNow Logo" width="144" height="114">
+            <h2>Hi, Welcome Back!</h2>
+            <form action="backend/login.php" method="post">  <!-- Update action to point to login.php -->
+                <label for="email">
+                    Email
+                </label>
+                <input type="email" name="email" placeholder="Email" required>
+                <label for="password">
+                    Password
+                </label>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account?
+                <a href="signup.html" style="text-decoration: underline;">
+                      Sign Up
+                </a> <br><br>
+          </p>
+        </div>
+    </div>
+</body>
+
+
+</html>

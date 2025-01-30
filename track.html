@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .order-tracking {
+            background-color: white;
+            width: 300px;
+            padding: 20px;
+            border: 2px solid rgba(37, 35, 35, 0.826);
+            border-radius: 15px;
+            box-shadow: 1px 10px 10px #00000045;
+        }
+
+        .status-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .circle {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #ccc;
+            position: relative;
+        }
+
+        .active {
+            background-color: #800000;
+        }
+
+        .line {
+            height: 10px;
+            width: 80px;
+            background-color: #ccc;
+        }
+
+        .preparing-status {
+            text-align: center;
+            color: black;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .preparing-status p {
+            font-size: 18px;
+        }
+
+        .order-summary {
+            margin-bottom: 20px;
+        }
+
+        .order-summary h3 {
+            margin-bottom: 10px;
+        }
+
+        .order-items {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+        }
+
+        .payment-method {
+            margin-bottom: 20px;
+        }
+
+        .payment-method h3 {
+            margin-bottom: 10px;
+        }
+
+        .payment-icon {
+            width: 24px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .total-due {
+            font-weight: 550px;
+            margin-bottom: 10px;
+            justify-content: space-between;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="order-tracking">
+        <div class="preparing-status">
+            <p>Preparing...</p>
+            <p><span id="time">15</span> mins remaining</p>
+        </div>
+
+        <div class="status-bar">
+            <div class="circle active"></div>
+            <div class="line active"></div>
+            <div class="circle"></div>
+            <div class="line"></div>
+            <div class="circle"></div>
+        </div>
+
+        <div class="order-summary">
+            <h3>Order Summary</h3>
+            <div class="order-items">
+                <!-- Order items will be dynamically added here -->
+            </div>
+        </div>
+
+        <div class="payment-method">
+            <h3>Payment</h3>
+            <div class="total-due">
+                Total R0.00
+            </div>
+        </div>
+    </div>
+
+    <script src="checkout.js"></script>
+    <script>
+        // Function to retrieve the order items from the cookie
+        function getOrderItems() {
+            let listCart = [];
+            var cookieValue = document.cookie
+                .split('; ')
+                .find(row => row.startsWith('listCart='));
+            if (cookieValue) {
+                listCart = JSON.parse(cookieValue.split('=')[1]);
+            }
+            return listCart;
+        }
+
+        // Function to display the order items on the track.html page
+        function displayOrderItems() {
+            let orderItemsContainer = document.querySelector('.order-items');
+            let totalDueContainer = document.querySelector('.total-due');
+            let listCart = getOrderItems();
+            let totalPrice = 0;
+
+            // Clear default data
+            orderItemsContainer.innerHTML = '';
+
+            // If there are products in the cart
+            if (listCart) {
+                listCart.forEach(product => {
+                    if (product) {
+                        let newItem = document.createElement('div');
+                        newItem.classList.add('item');
+                        newItem.innerHTML = `
+                            <span>${product.name}</span>
+                            <span>x${product.quantity}</span>
+                            <span>R${product.price * product.quantity}</span>
+                        `;
+                        orderItemsContainer.appendChild(newItem);
+                        totalPrice += (product.price * product.quantity);
+                    }
+                });
+            }
+
+            // Update the total due
+            totalDueContainer.innerText = `Total R${totalPrice}`;
+        }
+
+        // Call the function to display the order items when the page loads
+        window.onload = displayOrderItems;
+    </script>
+
+</body>
+
+</html>

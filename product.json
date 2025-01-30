@@ -1,0 +1,264 @@
+[
+
+    {
+        "id": 1,
+        "category": "light eats",
+        "name": "Fries",
+        "price": 35,
+        "image": "images/fries.png"
+    },
+    {
+        "id": 2,
+        "category": "light eats",
+        "name": "Crumbed Chicken Wrap",
+        "price": 40,
+        "image": "images/chickenwrap.png"
+    },
+    {
+        "id": 3,
+        "category": "light eats",
+        "name": "Chicken Pops",
+        "price": 35,
+        "image": "images/chickenpops.png"
+    }
+    ,
+    {
+        "id": 4,
+        "category": "light eats",
+        "name": "Crumbed Chicken & Cheese Burger",
+        "price": 36,
+        "image": "images/chickenburger.png"
+    },
+    {
+        "id": 5,
+        "category":"light eats",
+        "name": "Beef Burger",
+        "price": 32,
+        "image": "images/burger.png"
+    },
+    {
+        "id": 6,
+        "category":"light eats",
+        "name": "Grilled Chicken Salad",
+        "price": 45,
+        "image": "images/salad.png"
+    },
+
+
+
+    {
+        "id": 7,
+        "category": "sandwiches",
+        "name": "Basil Pesto Chicken Sandwich",
+        "price": 30,
+        "image": "images/pesto.png"
+    },
+    {
+        "id": 8,
+        "category": "sandwiches",
+        "name": "Pastrami & Cheese Sandwich",
+        "price": 30,
+        "image": "images/pastrami.png"
+    },
+    {
+        "id": 9,
+        "category": "sandwiches",
+        "name": "Cheese & Tomato Sandwich",
+        "price": 25,
+        "image": "images/cheesesandwich.png"
+    }
+    ,
+    {
+        "id": 10,
+        "category": "sandwiches",
+        "name": "Baguette with Pastrami, Avo, Lettuce & Cucumber",
+        "price": 40,
+        "image": "images/baguette.png"
+    },
+
+
+
+    {
+        "id": 11,
+        "category":"toasties",
+        "name": "Cheese Toastie",
+        "price": 20,
+        "image": "images/cheesetoastie.png"
+    },
+    {
+        "id": 12,
+        "category":"toasties",
+        "name": "Cheese & Tomato Toastie",
+        "price": 22,
+        "image": "images/tomatotoastie.png"
+    },
+
+
+
+    {
+        "id": 13,
+        "category": "gatsbys",
+        "name": "Chicken Gatsby",
+        "price": 105,
+        "image": "images/chicken.jpg"
+    },
+    {
+        "id": 14,
+        "category": "gatsbys",
+        "name": "Steak Gatsby",
+        "price": 110,
+        "image": "images/steak.jpg"
+    },
+    {
+        "id": 15,
+        "category": "gatsbys",
+        "name": "Vienna Gatsby",
+        "price": 80,
+        "image": "images/vienna.jpg"
+    }
+    ,
+    {
+        "id": 16,
+        "category": "gatsbys",
+        "name": "Chip Gatsby",
+        "price": 70,
+        "image": "images/chip.jpg"
+    },
+
+
+
+    {
+        "id": 17,
+        "category": "savoury snacks",
+        "name": "Simba / Lays",
+        "price": 10,
+        "image": "images/lays.png"
+    },
+    {
+        "id": 18,
+        "category": "savoury snacks",
+        "name": "Popcorn",
+        "price": 14,
+        "image": "images/popcorn.png"
+    },
+    {
+        "id": 19,
+        "category": "savoury snacks",
+        "name": "Pringles",
+        "price": 19,
+        "image": "images/pringles.png"
+    }
+    ,
+    {
+        "id": 20,
+        "category": "savoury snacks",
+        "name": "Peanuts",
+        "price": 12,
+        "image": "images/peanuts.png"
+    },
+
+
+
+    {
+        "id": 21,
+        "category": "confectionary",
+        "name": "Assorted Muffins",
+        "price": 21,
+        "image": "images/muffins.png"
+    },
+    {
+        "id": 22,
+        "category": "confectionary",
+        "name": "Chocolate Croissant",
+        "price": 21,
+        "image": "images/croissant.png"
+    },
+    {
+        "id": 23,
+        "category": "confectionary",
+        "name": "Donuts",
+        "price": 15,
+        "image": "images/donuts.png"
+    }
+    ,
+    {
+        "id": 24,
+        "category": "confectionary",
+        "name": "Cronut Bar One",
+        "price": 21,
+        "image": "images/cronut.png"
+    },
+
+
+
+    {
+        "id": 25,
+        "category": "sweet treats",
+        "name": "Assorted Chocolates",
+        "price": 15,
+        "image": "images/chocolates.png"
+    },
+    {
+        "id": 26,
+        "category": "sweet treats",
+        "name": "Maynards",
+        "price": 15,
+        "image": "images/maynards.png"
+    },
+    {
+        "id": 27,
+        "category": "sweet treats",
+        "name": "Fizz Pops",
+        "price": 4,
+        "image": "images/fizzpop.png"
+    }
+    ,
+    {
+        "id": 28,
+        "category": "sweet treats",
+        "name": "Damascus Nougat",
+        "price": 22,
+        "image": "images/nougat.png"
+    },
+
+
+
+    {
+        "id": 29,
+        "category": "cold beverages",
+        "name": "Bonaqua Still",
+        "price": 10,
+        "image": "images/bonaqua.png"
+    },
+    {
+        "id": 30,
+        "category": "cold beverages",
+        "name": "Aquelle Flavoured water",
+        "price": 14,
+        "image": "images/aquelle.png"
+    },
+    {
+        "id": 31,
+        "category": "cold beverages",
+        "name": "Cans 330ml",
+        "price": 14,
+        "image": "images/can.png"
+    }
+    ,
+    {
+        "id": 32,
+        "category": "cold beverages",
+        "name": "Powerade / Energade",
+        "price": 17,
+        "image": "images/powerade.png"
+    },
+    {
+        "id": 33,
+        "category": "cold beverages",
+        "name": "Monster Energy",
+        "price": 23,
+        "image": "images/monster.png"
+    }
+
+
+]

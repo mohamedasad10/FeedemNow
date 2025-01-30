@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedem Now</title>
+    <link rel="stylesheet" href="feedemnow.css">
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* LANDING / INDEX PAGE */
+.landing-page {
+    text-align: center;
+    background: url("images/landing-bg.png") no-repeat center center/cover;
+    background-blend-mode: overlay;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.781);
+}
+
+.buttons {
+    margin-bottom: 150px;
+}
+
+.button-container {
+    display: flex;
+}
+
+.index-signup-btn {
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #AC311A;
+    color: white;
+    padding: 5px 15px;
+    margin-left: 0px;
+    text-decoration: none;
+    border: 1px solid #AC311A;
+    border-radius: 1px;
+    transition: background-color 0.3s;
+    display: flex;
+    width: 123px;
+    height: 22px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.index-login-btn {
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #8E200C;
+    color: white;
+    padding: 5px 15px;
+    margin-right: 0px;
+    text-decoration: none;
+    border: 1px solid #8E200C;
+    border-radius: 1px;
+    transition: background-color 0.3s;
+    display: flex;
+    width: 123px;
+    height: 22px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.index-menu-btn {
+    font-size: 12px;
+    font-weight: bold;
+    /* background-color: rgba(255, 255, 255, 0); */
+    background-color: #f0f0f0;
+    color: black;
+    padding: 10px 40px;
+    margin: 5px;
+    text-decoration: none;
+    border: 2px solid #8E200C;
+    border-radius: 5px;
+    transition: background-color 0.3s; 
+    width: 126px;
+    height: 31px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.index-signup-btn:hover {
+    background-color: #ac301abb;
+    border-color: #ac301a00;
+}
+
+.index-login-btn:hover {
+    background-color: #ac301abb;
+    border-color: #ac301a00;
+}
+
+.index-menu-btn:hover {
+    background-color: #ac301abb;
+    border-color: #ac301a00;
+    color: white;
+}
+</style>
+
+<body>
+    <div class="landing-page">
+        <img src="images\feedemnow-logo-2.png" alt="FeedemNow Logo" width="358" height="276">
+        <div class="buttons">
+            <div class="button-container">
+                <a href="login.html" class="index-login-btn">LOGIN</a> 
+                <a href="signup.html" class="index-signup-btn">SIGN UP</a>
+            </div> <br> <br>
+            <a href="menu.php" class="index-menu-btn">View Menu</a>
+        </div>
+    </div>
+</body>
+
+</html>
