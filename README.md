@@ -1,7 +1,7 @@
 # Feedem Now
 
 ## Overview
-Feedem Now is a web-based food ordering application that allows users to browse a menu, add items to their cart, and proceed to checkout🍕. The app uses PHP for backend functionality, MySQL for database management, and HTML, CSS, and JavaScript for the frontend.
+Feedem Now is a web-based food ordering application that allows users to browse a menu, add items to their cart, and proceed to checkout. The app uses PHP for backend functionality, MySQL for database management, and HTML, CSS, and JavaScript for the frontend.
 
 This project was developed as part of a CSC312 Software Engineering group assignment.
 
